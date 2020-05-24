@@ -1,8 +1,17 @@
 import React from 'react';
 import { Row, Col, Container, Form, Button, Card } from 'react-bootstrap'
 const Contact = () => {
+
     return (
         <>
+            <style type="text/css">
+            {`
+            .btn-teal {
+              background-color: #14ffec;
+              color: white;
+            }
+            `}
+            </style>
             <Container>
                 <Row>
                     <Col sm={6} className='px-4'>
@@ -56,7 +65,7 @@ const Contact = () => {
                             </Row>
                             <Row>
                                 <Col>
-                                    <Button type='submit' variant="primary" size="md" block>
+                                    <Button variant='teal' type='submit' size="md" block>
                                         Submit
                                      </Button>
                                 </Col>

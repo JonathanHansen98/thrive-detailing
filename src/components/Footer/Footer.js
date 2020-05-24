@@ -50,19 +50,19 @@ const Footer = () => {
     </Row>
     <Row className='text-center'>
       <Col className='mx-auto py-3'>
-        <a href='#'>Home</a>      
+        <a href='/'>Home</a>      
       </Col>
       <Col className='mx-auto py-3'>
-        <a href='#'>About</a>      
+        <a href='/about'>About</a>      
       </Col>
       <Col className='mx-auto py-3'>
-        <a href='#'>Gallery</a>      
+        <a href='/gallery'>Gallery</a>      
       </Col>
       <Col className='mx-auto py-3'>
-        <a href='#'>Services</a>      
+        <a href='/services'>Services</a>      
       </Col>
       <Col className='mx-auto py-3'>
-        <a href='#'>Contact</a>      
+        <a href='/contact'>Contact</a>      
       </Col>
     </Row>
     <Row className='text-center py-3'>
