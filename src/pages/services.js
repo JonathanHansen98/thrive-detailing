@@ -1,13 +1,13 @@
 import React from 'react'
 import Layout from '../components/Layout/layout'
-import About from '../components/About/About'
+import Services from '../components/Services/Services'
 
-const AboutPage = () => {
+const  ServicesPage = () => {
     return (
         <Layout>
-           <About></About>
+        <Services/>
         </Layout>
     )
 };
 
-export default AboutPage;
+export default ServicesPage;

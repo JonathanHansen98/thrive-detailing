@@ -1,0 +1,23 @@
+body {
+  background-color: #323232;
+  color: rgb(196, 190, 190);
+  font-family: 'Montserrat';
+}
+
+a {
+  color: rgb(196, 190, 190);
+  text-decoration: none;
+}
+a:hover {
+  color: #14ffec;
+  text-decoration: none;
+}
+
+.card {
+  background-color: #212121;
+  border-color: #212121;
+}
+
+.tealAccent {
+  color: #14ffec;
+}
