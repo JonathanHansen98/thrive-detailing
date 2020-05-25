@@ -41,7 +41,7 @@ const ContactForm = () => {
                     <Col>
                         <Form.Group controlId="subject">
                             <Form.Label>Subject</Form.Label>
-                            <Form.Control as="select" id="subject">
+                            <Form.Control as="select" name="subject">
                                 <option>Quote</option>
                                 <option>Question</option>
                                 <option>Comment</option>
@@ -53,7 +53,7 @@ const ContactForm = () => {
                     <Col>
                         <Form.Group controlId="message">
                             <Form.Label>Message:</Form.Label>
-                            <Form.Control as="textarea" rows="5" id="message" />
+                            <Form.Control as="textarea" rows="5" name="message" />
                         </Form.Group>
                     </Col>
                 </Row>
