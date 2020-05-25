@@ -15,14 +15,14 @@ const Services = () => {
 
             <p>Try-hard dreamcatcher sriracha, forage wolf chicharrones fam crucifix hella hoodie yr next level. Slow-carb glossier cray stumptown cold-pressed. Man bun fanny pack shoreditch fam pop-up, literally taiyaki. Kogi 3 wolf moon dreamcatcher, listicle schlitz irony adaptogen edison bulb VHS. Raw denim schlitz helvetica chillwave cardigan health goth kogi raclette selvage kombucha pabst. Taxidermy wayfarers sartorial pabst church-key vexillologist shabby chic neutra. Hella activated charcoal twee health goth.</p>
           </Col>
-          <Col lg={6} className='text-center'>
+          <Col xl={6} className='text-center'>
             <img src='https://via.placeholder.com/850x650' width='100%' />
           </Col>
         </Row>
       </Container>
       <Container style={styles.container} fluid='true' className='px-5 py-5'>
         <Row>
-          <Col lg={6} className='text-center'>
+          <Col xl={6} className='text-center'>
             <img src='https://via.placeholder.com/850x650' width='100%' />
           </Col>
           <Col className='align-self-center'>
@@ -41,7 +41,7 @@ const Services = () => {
 
             <p>Try-hard dreamcatcher sriracha, forage wolf chicharrones fam crucifix hella hoodie yr next level. Slow-carb glossier cray stumptown cold-pressed. Man bun fanny pack shoreditch fam pop-up, literally taiyaki. Kogi 3 wolf moon dreamcatcher, listicle schlitz irony adaptogen edison bulb VHS. Raw denim schlitz helvetica chillwave cardigan health goth kogi raclette selvage kombucha pabst. Taxidermy wayfarers sartorial pabst church-key vexillologist shabby chic neutra. Hella activated charcoal twee health goth.</p>
           </Col>
-          <Col lg={6} className='text-center'>
+          <Col xl={6} className='text-center'>
             <img src='https://via.placeholder.com/850x650' width='100%' />
           </Col>
         </Row>

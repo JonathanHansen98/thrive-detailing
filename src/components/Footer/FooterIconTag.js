@@ -3,6 +3,7 @@ import React from 'react'
 import {Row, Col, Container} from 'react-bootstrap'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faPhoneVolume, faTags } from '@fortawesome/free-solid-svg-icons'
 
 const FooterIconTag = (props) => {
   return (

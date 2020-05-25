@@ -18,23 +18,23 @@ const ContactForm = () => {
                 <Row>
                     <Col>
                         <Form.Label>First Name</Form.Label>
-                        <Form.Control type="i" placeholder="John" id="first_name" />
+                        <Form.Control type="i" placeholder="John" name="first_name" />
                     </Col>
                     <Col>
                         <Form.Label>Last Name</Form.Label>
-                        <Form.Control type="input" placeholder="Smith" id="last_name" />
+                        <Form.Control type="input" placeholder="Smith" name="last_name" />
                     </Col>
                 </Row>
                 <Row>
                     <Col>
                         <Form.Label>Email Address</Form.Label>
-                        <Form.Control type="email" placeholder="johnsmith@somewhere.com" id="email" />
+                        <Form.Control type="email" placeholder="johnsmith@somewhere.com" name="email" />
                     </Col>
                 </Row>
                 <Row>
                     <Col>
                         <Form.Label>Phone Number</Form.Label>
-                        <Form.Control type="input" placeholder="123-456-7890" id="phone" />
+                        <Form.Control type="input" placeholder="123-456-7890" name="phone" />
                     </Col>
                 </Row>
                 <Row>

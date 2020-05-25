@@ -19,17 +19,17 @@ const styles = {
 
 const tag = [
   {
-    tagIcon: 'envelope',
+    tagIcon: 'faEnvelope',
     tagHead: 'Get a',
     tagBold: 'Free Quote'
   },
   {
-    tagIcon: 'phone-volume',
+    tagIcon: 'faPhoneVolume',
     tagHead: 'Contact us',
     tagBold: '480-123-4567'
   },
   {
-    tagIcon: 'tags',
+    tagIcon: 'faTags ',
     tagHead: 'View our',
     tagBold: 'Pricing'
   }
