@@ -5,7 +5,6 @@ import {Row, Col, Container} from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const FooterIconTag = (props) => {
-  console.log(props)
   return (
     <div>
       <Container className='d-flex justify-content-center'>
@@ -16,7 +15,7 @@ const FooterIconTag = (props) => {
         <Col xs={6} md='auto'>
           <Row>
             <Col>
-            <h5>{props.content.tagHead}</h5>
+              <h5>{props.content.tagHead}</h5>
             </Col>
           </Row>
           <Row md='auto'>

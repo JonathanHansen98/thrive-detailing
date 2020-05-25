@@ -7,7 +7,7 @@ const Services = () => {
   }
   return (
     <div>
-      <Container fluid='true' className='px-5 py-3'>
+      <Container fluid='true' className='px-5 py-5'>
         <Row>
           <Col className='align-self-center'>
             <h1>Automotive Detailing</h1>
@@ -20,7 +20,7 @@ const Services = () => {
           </Col>
         </Row>
       </Container>
-      <Container style={styles.container} fluid='true' className='px-5 py-3'>
+      <Container style={styles.container} fluid='true' className='px-5 py-5'>
         <Row>
           <Col lg={6} className='text-center'>
             <img src='https://via.placeholder.com/850x650' width='100%' />
@@ -33,7 +33,7 @@ const Services = () => {
           </Col>
         </Row>
       </Container>
-      <Container fluid='true' className='px-5 py-3'>
+      <Container fluid='true' className='px-5 py-5'>
         <Row>
           <Col className='align-self-center'>
             <h1>Automotive Detailing</h1>
