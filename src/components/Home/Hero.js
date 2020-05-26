@@ -1,8 +1,5 @@
 import React, { useState } from 'react'
 
-import trailerImg from '../../images/trailer1.jpg';
-import boatImg from '../../images/boat1.jpg';
-
 import bmwImg from '../../images/bmwfoam.png'
 import foamImg from '../../images/spongewash.png'
 import pricebanner from '../../images/pricebanner.png'
@@ -27,7 +24,7 @@ const Hero = () => {
 
     const [index, setIndex] = useState(0);
 
-    const handleSelect = (selectedIndex, e) => {
+    const handleSelect = (selectedIndex) => {
         setIndex(selectedIndex);
     };
 

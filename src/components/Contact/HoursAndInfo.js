@@ -1,5 +1,7 @@
 import React from 'react'
-import { Row, Col, Container, Form, Button, Card } from 'react-bootstrap'
+import { Row, Col, Card } from 'react-bootstrap'
+import thriveLogo from '../../images/thrive-logo-125x.png'
+
 
 
 const HoursAndInfo = () => {
@@ -8,10 +10,10 @@ const HoursAndInfo = () => {
       <Row >
         <Col>
           <Card body>
-            <Row className='py-4'>
+            <Row>
               <Col>
                 <div className='text-center'>
-                  <img src='https://via.placeholder.com/400x100'></img>
+                  <img src={thriveLogo}></img>
                 </div>
               </Col>
             </Row>
@@ -19,26 +21,40 @@ const HoursAndInfo = () => {
               <Col>
                 <Row>
                   <Col>
-                    <h5>Hours</h5>
+                    <h5>Hours:</h5>
                   </Col>
                 </Row>
                 <Row>
                   <Col className='text-center'>
-                    <p>lorem10</p>
+                    <p>Mon - 8a - 5p</p>
+                    <p>Tue - 8a - 5p</p>
+                    <p>Wed - 8a - 5p</p>
+                  </Col>
+                  <Col className='text-center'>
+                    <p>Thu - 8a - 5p</p>
+                    <p>Fri - 8a - 5p</p>
+                    <p>Sat - 8a - 5p</p>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col className='text-center'>
+                    < p>Sun - Closed</p>
                   </Col>
                 </Row>
               </Col>
             </Row>
-            <Row className='py-4'>
+            <Row >
               <Col>
                 <Row>
                   <Col>
-                    <h5>Contact info</h5>
+                    <h5>Contact Info:</h5>
                   </Col>
                 </Row>
                 <Row>
                   <Col className='text-center'>
-                    <p>lorem10</p>
+                    <p>Thrive Automotive Detailing: (480) 123-4567</p>
+                    <p>detail@thriveautodetailing.com</p>
+                    <p>123 W 1st st, Mesa AZ 85207</p>
                   </Col>
                 </Row>
               </Col>

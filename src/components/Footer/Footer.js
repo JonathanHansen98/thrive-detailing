@@ -1,7 +1,8 @@
 import React from 'react';
 import {Row, Col, Container} from 'react-bootstrap'
-import FooterIconTag from './FooterIconTag';
-import { faBlackTie } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faPhoneVolume, faTags } from '@fortawesome/free-solid-svg-icons'
+import thriveLogo from '../../images/thrive-car-125x.png'
 
 const styles = {
   Row: {
@@ -15,38 +16,79 @@ const styles = {
     backgroundColor:'#212121'
   }
 }
-
-
-const tag = [
-  {
-    tagIcon: 'faEnvelope',
-    tagHead: 'Get a',
-    tagBold: 'Free Quote'
-  },
-  {
-    tagIcon: 'faPhoneVolume',
-    tagHead: 'Contact us',
-    tagBold: '480-123-4567'
-  },
-  {
-    tagIcon: 'faTags ',
-    tagHead: 'View our',
-    tagBold: 'Pricing'
-  }
-];
-
 const Footer = () => {
   return (
     <>
     <Container fluid={true} style={styles.tealAccent}>
     <Row className='py-3' style={styles.Row}>
-      {tag.map((ad, index) => {
-        return (
-          <Col md={4} className='py-3' key={index}>
-          <FooterIconTag content={ad}  />
-          </Col>
-        )
-      })}
+      <Col>
+        <div>
+          <Container className='d-flex justify-content-center justify-content-middle'>
+            <Row>
+              <Col xs={6} md='auto'  className='hvr-icon-grow-rotate'>
+                <FontAwesomeIcon icon={faEnvelope} size="5x"  className='hvr-icon'/>
+              </Col>
+              <Col xs={6} md='auto'>
+                <Row>
+                  <Col>
+                    <h5>Get a</h5>
+                  </Col>
+                </Row>
+                <Row md='auto'>
+                  <Col>
+                    <b><i><h4 className='tealAccent'>Free Quote</h4></i></b>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      </Col>
+      <Col>
+        <div>
+          <Container className='d-flex justify-content-center'>
+            <Row>
+              <Col xs={6} md='auto'  className='hvr-icon-grow-rotate'>
+                <FontAwesomeIcon icon={faPhoneVolume} size="5x" className='hvr-icon'/>
+              </Col>
+              <Col xs={6} md='auto'>
+                <Row>
+                  <Col>
+                    <h5>Contact us</h5>
+                  </Col>
+                </Row>
+                <Row md='auto'>
+                  <Col>
+                    <b><i><h4 className='tealAccent'>480-456-7890</h4></i></b>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      </Col>      <Col>
+      <div>
+        <Container className='d-flex justify-content-center'>
+          <Row>
+            <Col xs={6} md='auto' className='hvr-icon-grow-rotate'>
+              <FontAwesomeIcon icon={faTags} size="5x" className='hvr-icon'/>
+            </Col>
+            <Col xs={6} md='auto'>
+              <Row>
+                <Col>
+                  <h5>View our</h5>
+                </Col>
+              </Row>
+              <Row md='auto'>
+                <Col>
+                  <b><i><h4 className='tealAccent'>Pricing</h4></i></b>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    </Col>
     </Row>
     <Row className='text-center'>
       <Col className='mx-auto py-3'>
@@ -73,14 +115,14 @@ const Footer = () => {
     </Container>
     <Container fluid={true}>
       <Row style={styles.footerColor} className='text-center py-3'>
-        <Col sm={4}> 
-          somethin else
+        <Col sm={4}>
+          Thrive Automotive Detailing LLC
         </Col>
         <Col sm={4}> 
-          logo
+          <img src={thriveLogo} height='35px'/>
         </Col>
         <Col sm={4}> 
-          idk
+          Website by Jonathan Hansen
         </Col>
       </Row>
     </Container>

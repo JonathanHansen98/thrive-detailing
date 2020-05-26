@@ -6,21 +6,24 @@ import Hero from "./Hero"
 
 import ServiceCard from './ServiceCard'
 import SummarySection from "./SummarySection"
+import redCarPic from '../../images/outside-sponge.jpg'
+import semiPic from '../../images/semiTruck.jpeg'
+import greyCarPic from '../../images/soapyGrey.jpeg'
 
 const services = [
     {
         cardHeader: "Automotive Detailing",
-        imageURL: "https://via.placeholder.com/150x150",
+        imageURL: redCarPic,
         cardBody: "Some quick example text to build on the card title and make up the bulk of the card's content."
     },
     {
         cardHeader: "RV/ Boat Detailing",
-        imageURL: "https://via.placeholder.com/150x150",
+        imageURL: semiPic,
         cardBody: "Some quick example text to build on the card title and make up the bulk of the card's content."
     },
     {
         cardHeader: "Mobile Services",
-        imageURL: "https://via.placeholder.com/150x150",
+        imageURL:greyCarPic,
         cardBody: "Some quick example text to build on the card title and make up the bulk of the card's content."
     }
 ]
@@ -48,7 +51,7 @@ const Home = () => {
         <>
             <Container fluid={true}>
                 <Row className={styles.row}>
-                    <Col className={styles.col,"px-0"} sm={12}>
+                    <Col className={[styles.col,"px-0"]} sm={12}>
                         <Hero />
                     </Col>
                 </Row>
