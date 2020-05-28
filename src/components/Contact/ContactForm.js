@@ -18,7 +18,7 @@ const ContactForm = () => {
                 <Row>
                     <Col>
                         <Form.Label>First Name</Form.Label>
-                        <Form.Control type="i" placeholder="John" name="first_name" />
+                        <Form.Control type="inpu" placeholder="John" name="first_name" />
                     </Col>
                     <Col>
                         <Form.Label>Last Name</Form.Label>
