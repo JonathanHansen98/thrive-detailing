@@ -16,10 +16,10 @@ const Contact = () => {
             </style>
             <Container className='py-3'>
                 <Row>
-                    <Col sm={6} className='px-4'>
+                    <Col sm={6} className='p-5'>
                         <ContactForm/>
                     </Col>
-                    <Col sm={6} className='px-4 d-flex align-items-center'>
+                    <Col sm={6} className='p-5 d-flex align-items-center'>
                       <HoursInfo/>
                     </Col>
                 </Row>

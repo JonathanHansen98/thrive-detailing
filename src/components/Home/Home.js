@@ -43,9 +43,6 @@ const Home = () => {
            paddingLeft: 0,
            paddingRight: 0,
        },
-       container: {
-           backgroundColor: '#212121'
-         }
     }
     return (
         <>
@@ -56,7 +53,7 @@ const Home = () => {
                     </Col>
                 </Row>
             </Container>
-            <Container>
+            <Container fluid={true}>
                 <Row>
                     {services.map((service, index) => {
                         return (
@@ -67,7 +64,7 @@ const Home = () => {
                     })}
                 </Row>
             </Container>
-            <Container className='py-5' fluid={true} style={styles.container}>
+            <Container className='py-5 veryDark' fluid={true}>
             <SummarySection/>
             </Container>
         </>

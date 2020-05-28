@@ -13,10 +13,6 @@ a:hover {
   text-decoration: none;
 }
 
-.card {
-  background-color: #212121;
-  border-color: #212121;
-}
 
 .tealAccent {
   color: #14ffec;
@@ -33,6 +29,18 @@ img {
 .shadowImg {
   border-radius: 3%;
   box-shadow:0 0 10px 3px black;
+}
+
+.veryDark {
+  background-color: #212121;
+}
+
+.lightDark {
+  background-color: #323232;
+}
+
+.tealShadowHover:hover {
+  box-shadow: 0 0 10px 3px #585858 ;
 }
 
 /*Hover CSS*/
@@ -111,4 +119,22 @@ img {
   -webkit-transform: translateY(0);
   transform: translateY(0);
   border-width: 4px;
+}
+
+/* Fade */
+.hvr-fade {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+  background-color: rgba(24, 24, 24, 0.623);
+  color: white;
 }

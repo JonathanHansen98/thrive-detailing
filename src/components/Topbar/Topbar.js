@@ -19,7 +19,7 @@ const Topbar = () => {
         height="35"
         className="d-inline-block align-top mb-0 "
       />{' '}
-      Thrive Mobile Detailing
+      Thrive Auto Detailing
     </Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">

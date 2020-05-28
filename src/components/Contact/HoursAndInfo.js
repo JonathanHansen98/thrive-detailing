@@ -9,7 +9,7 @@ const HoursAndInfo = () => {
     <div>
       <Row >
         <Col>
-          <Card body>
+          <Card className='veryDark shadowImg' body>
             <Row>
               <Col>
                 <div className='text-center'>

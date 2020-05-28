@@ -12,7 +12,7 @@ import {
 
 const useStyles = () => ({
     carousel: {
-        height: 100
+        height: 150
     },
 
 
@@ -36,7 +36,7 @@ const Hero = () => {
                         className="d-block w-100"
                         src={bmwImg}
                         alt="First slide"
-                        height="500px"
+                        height="700px"
                     />
                 </Carousel.Item>
                 <Carousel.Item>
@@ -44,7 +44,7 @@ const Hero = () => {
                         className="d-block w-100"
                         src={foamImg}
                         alt="Second slide"
-                        height="500px"
+                        height="700px"
                     />
                 </Carousel.Item>
                 <Carousel.Item>
@@ -52,7 +52,7 @@ const Hero = () => {
                         className="d-block w-100"
                         src={pricebanner}
                         alt="Third slide"
-                        height="500px"
+                        height="700px"
                     />
                 </Carousel.Item>
             </Carousel>

@@ -30,7 +30,7 @@ const Services = () => {
             <img className='shadowImg' src={rvPic} width='100%' />
           </Col>
           <Col className='align-self-center' style={styles.lineSpaced}>
-            <h1 className='tealAccent hvr-forward underlined'>Boat/ Rv Detailing</h1>
+            <h1 className='tealAccent hvr-forward underlined mt-5'>Boat/ Rv Detailing</h1>
             <p>Vape ennui vexillologist selfies cliche activated charcoal pop-up keffiyeh shaman. Cronut lomo readymade 8-bit, dreamcatcher everyday carry crucifix live-edge authentic chillwave bitters put a bird on it kogi church-key letterpress. Iceland kitsch succulents cloud bread blog swag dreamcatcher synth green juice godard cold-pressed. Small batch flannel gastropub, bespoke helvetica locavore shoreditch. Snackwave green juice kogi hoodie palo santo before they sold out. Photo booth disrupt 3 wolf moon farm-to-table, gluten-free adaptogen authentic iceland man braid. Beard pok pok iceland small batch crucifix taxidermy, salvia prism man bun copper mug gluten-free.</p>
           </Col>
         </Row>
