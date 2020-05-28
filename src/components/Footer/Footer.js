@@ -86,23 +86,23 @@ const Footer = () => {
           </Col>
         </Row>
         <Row className='text-center'>
-          <Col xs={'auto'} className='mx-auto pt-3 py-md-3'>
+          <Col xs={'auto'} className='mx-auto py-1 py-md-3'>
             <a href='/'>Home</a>
           </Col>
-          <Col xs={'auto'} className='mx-auto pt-3 py-md-3'>
+          <Col xs={'auto'} className='mx-auto py-1 py-md-3'>
             <a href='/about'>About</a>
           </Col>
-          <Col xs={'auto'} className='mx-auto pt-3 py-md-3'>
+          <Col xs={'auto'} className='mx-auto py-1 py-md-3'>
             <a href='/gallery'>Gallery</a>
           </Col>
-          <Col xs={'auto'} className='mx-auto pt-3 py-md-3'>
+          <Col xs={'auto'} className='mx-auto py-1 py-md-3'>
             <a href='/services'>Services</a>
           </Col>
-          <Col xs={'auto'} className='mx-auto pt-3 py-md-3'>
+          <Col xs={'auto'} className='mx-auto py-1 py-md-3'>
             <a href='/contact'>Contact</a>
           </Col>
         </Row>
-        <Row className='text-center pt-3 py-md-3'>
+        <Row className='text-center py-3'>
           <Col>
             <p>Thrive Automotive Detailing: (480) 123-4567 | detail@thriveautodetailing.com | 123 W 1st st, Mesa AZ 85207</p>
           </Col>
