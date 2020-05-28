@@ -5,14 +5,19 @@ import Form from './Contact/ContactForm'
 const ContactFormModal = (props) => {
   return (
     <>
-      <Modal {...props} aria-labelledby="contained-modal-title-vcenter">
+      <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Send us an Email!
+            Modal heading
         </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Form></Form>
+         <Form/>
         </Modal.Body>
         <Modal.Footer>
           <Button onClick={props.onHide}>Close</Button>

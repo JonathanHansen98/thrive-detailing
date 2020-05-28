@@ -1,9 +1,11 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col, Button } from 'react-bootstrap'
 import wheelPic from '../../images/wheels.jpg'
 import rvPic from '../../images/rv-wash.jpg'
 import outsidePic from '../../images/outside-sponge.jpg'
+import Modal from '../ContactFormModal'
 const Services = () => {
+  const [modalShow, setModalShow] = React.useState(false);
   const styles = {
     container: {
       backgroundColor: '#212121'    },
@@ -21,6 +23,12 @@ const Services = () => {
           </Col>
           <Col xl={6} className='text-center'>
             <img className='shadowImg' src={wheelPic} width='100%' />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Button onClick={() => setModalShow(true)} block>Request a quote</Button>
+            <Modal show={modalShow} onHide={() => setModalShow(false)} />
           </Col>
         </Row>
       </Container>
