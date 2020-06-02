@@ -28,6 +28,7 @@ const Topbar = () => {
       <Nav.Link className='hvr-forward' style={styles.darkPrimary}  href="/services">Services</Nav.Link>
       <Nav.Link className='hvr-forward' style={styles.darkPrimary}  href="/gallery">Gallery</Nav.Link>
       <Nav.Link className='hvr-forward' style={styles.darkPrimary}  href="/contact">Contact</Nav.Link>
+      <Nav.Link className='hvr-forward' style={styles.darkPrimary}  href="/pricing">Pricing</Nav.Link>
       </Nav>
   </Navbar.Collapse>
 </Navbar>)

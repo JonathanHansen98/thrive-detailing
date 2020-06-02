@@ -27,7 +27,7 @@ const Services = () => {
         </Row>
         <Row>
           <Col>
-            <Button onClick={() => setModalShow(true)} block>Request a quote</Button>
+            <Button variant='teal tealShadowHover' className='mt-5' onClick={() => setModalShow(true)} block>Request a quote</Button>
             <Modal show={modalShow} onHide={() => setModalShow(false)} />
           </Col>
         </Row>
@@ -42,6 +42,12 @@ const Services = () => {
             <p>Vape ennui vexillologist selfies cliche activated charcoal pop-up keffiyeh shaman. Cronut lomo readymade 8-bit, dreamcatcher everyday carry crucifix live-edge authentic chillwave bitters put a bird on it kogi church-key letterpress. Iceland kitsch succulents cloud bread blog swag dreamcatcher synth green juice godard cold-pressed. Small batch flannel gastropub, bespoke helvetica locavore shoreditch. Snackwave green juice kogi hoodie palo santo before they sold out. Photo booth disrupt 3 wolf moon farm-to-table, gluten-free adaptogen authentic iceland man braid. Beard pok pok iceland small batch crucifix taxidermy, salvia prism man bun copper mug gluten-free.</p>
           </Col>
         </Row>
+        <Row>
+          <Col>
+            <Button variant='teal tealShadowHover' className='mt-5' onClick={() => setModalShow(true)} block>Request a quote</Button>
+            <Modal show={modalShow} onHide={() => setModalShow(false)} />
+          </Col>
+        </Row>
       </Container>
       <Container fluid='true' className='px-5 py-5'>
         <Row>
@@ -51,6 +57,12 @@ const Services = () => {
           </Col>
           <Col xl={6} className='text-center'>
             <img className='shadowImg' src={outsidePic} width='100%' />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Button variant='teal tealShadowHover' className='mt-5' onClick={() => setModalShow(true)} block>Request a quote</Button>
+            <Modal show={modalShow} onHide={() => setModalShow(false)} />
           </Col>
         </Row>
       </Container>

@@ -35,12 +35,26 @@ img {
   background-color: #212121;
 }
 
-.lightDark {
+.lightDark, .modal-content {
   background-color: #323232;
 }
 
-.tealShadowHover:hover {
+.modal-header, .modal-footer {
+  border: none;
+}
+
+.btn-teal {
+  background-color: #14ffec;
+  color: black;
+}
+
+.btn-teal:hover {
   box-shadow: 0 0 10px 3px #585858 ;
+}
+
+.priceImg{
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
 }
 
 /*Hover CSS*/

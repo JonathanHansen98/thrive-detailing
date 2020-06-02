@@ -43,6 +43,7 @@ const ContactForm = () => {
                             <Form.Label>Subject</Form.Label>
                             <Form.Control as="select" name="subject">
                                 <option>Quote</option>
+                                <option>Set up appointment</option>
                                 <option>Question</option>
                                 <option>Comment</option>
                             </Form.Control>
