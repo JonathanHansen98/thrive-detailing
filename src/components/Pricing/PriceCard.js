@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card, Button } from 'react-bootstrap'
-import Modal from '../ContactFormModal'
+import Modal from '../Calendly/CalendlyModal'
 
 
 
