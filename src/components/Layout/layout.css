@@ -3,6 +3,13 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./font/Montserrat-Regular.otf');
+}
+body {
+  font-family: 'Montserrat';
+}
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;

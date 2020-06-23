@@ -57,7 +57,7 @@ const Footer = () => {
                   </Row>
                   <Row xs={12} md='auto'>
                     <Col>
-                      <b><i><h4 className='tealAccent'>480-456-7890</h4></i></b>
+                      <b><i><h4 className='tealAccent'>(480) 236-7673</h4></i></b>
                     </Col>
                   </Row>
                 </Col>
@@ -105,7 +105,7 @@ const Footer = () => {
         </Row>
         <Row className='text-center py-3'>
           <Col>
-            <p>Thrive Automotive Detailing: (480) 123-4567 | detail@thriveautodetailing.com | 123 W 1st st, Mesa AZ 85207</p>
+            <p>Thrive Automotive Detailing: (480) 236-7673 | detail@thriveautodetailing.com</p>
           </Col>
         </Row>
       </Container>

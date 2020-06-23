@@ -52,9 +52,8 @@ const HoursAndInfo = () => {
                 </Row>
                 <Row>
                   <Col className='text-center'>
-                    <p>Thrive Automotive Detailing: (480) 123-4567</p>
+                    <p>Thrive Automotive Detailing: (480) 236-7673</p>
                     <p>detail@thriveautodetailing.com</p>
-                    <p>123 W 1st st, Mesa AZ 85207</p>
                   </Col>
                 </Row>
               </Col>
