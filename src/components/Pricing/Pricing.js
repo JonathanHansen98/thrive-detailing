@@ -57,7 +57,7 @@ const Pricing = () => {
   ]
   return (
     <div>
-      <Container fluid>
+      <Container>
         <Row>
           <Col className='text-center mt-3 tealAccent'>
             <h1 className='underlined hvr-forward'>
@@ -67,37 +67,39 @@ const Pricing = () => {
         </Row>
         <Row>
           {
-          basicImgs.map((img, index) => {
-            return (
-            <Col lg={4} key={index} >
-              <PriceCard class='veryDark my-2 my-lg-3' img={img.imgUrl} />
-            </Col>
-            )
-          })
+            basicImgs.map((img, index) => {
+              return (
+                <Col lg={4} key={index} >
+                  <PriceCard class='veryDark my-2 my-lg-3' img={img.imgUrl} />
+                </Col>
+              )
+            })
           }
         </Row>
       </Container>
-      <Container fluid className='veryDark'>
-        <Row>
-          <Col className='text-center mt-3 tealAccent' >
-            <h1 className='underlined hvr-forward'>
-              Ultimate Detail Package
+      <div className="w-100 veryDark">
+        <Container>
+          <Row>
+            <Col className='text-center mt-3 tealAccent' >
+              <h1 className='underlined hvr-forward'>
+                Ultimate Detail Package
             </h1>
-          </Col>
-        </Row>
-        <Row>
-          {
-          ultimateImgs.map((img, index) => {
-            return (
-            <Col lg={4} key={index} >
-              <PriceCard class='lightDark my-2 my-lg-3' img={img.imgUrl} />
             </Col>
-            )
-          })
-          }
-        </Row>
-      </Container>
-      <Container fluid >
+          </Row>
+          <Row>
+            {
+              ultimateImgs.map((img, index) => {
+                return (
+                  <Col lg={4} key={index} >
+                    <PriceCard class='lightDark my-2 my-lg-3' img={img.imgUrl} />
+                  </Col>
+                )
+              })
+            }
+          </Row>
+        </Container>
+      </div>
+      <Container >
         <Row>
           <Col className='text-center  mt-3 tealAccent'>
             <h1 className='underlined hvr-forward'>
@@ -107,34 +109,36 @@ const Pricing = () => {
         </Row>
         <Row>
           {
-          paintImgs.map((img, index) => {
-            return (
-            <Col lg={4} key={index} >
-              <PriceCard class='veryDark my-2 my-lg-3' img={img.imgUrl} />
-            </Col>
-            )
-          })
+            paintImgs.map((img, index) => {
+              return (
+                <Col lg={4} key={index} >
+                  <PriceCard class='veryDark my-2 my-lg-3' img={img.imgUrl} />
+                </Col>
+              )
+            })
           }
         </Row>
       </Container>
-      <Container fluid className='veryDark'>
-        <Row>
-          <Col className='text-center  mt-3 tealAccent'>
-            <h1 className='underlined hvr-forward'>Ceramic Coating/ Interior Sanitation</h1>
-          </Col>
-        </Row>
-        <Row className='pb-5'>
-          {
-          miscImg.map((img, index) => {
-            return (
-            <Col key={index} >
-              <PriceCard class='lightDark my-3' img={img.imgUrl} />
+      <div className="w-100 veryDark">
+        <Container>
+          <Row>
+            <Col className='text-center  mt-3 tealAccent'>
+              <h1 className='underlined hvr-forward'>Ceramic Coating/ Interior Sanitation</h1>
             </Col>
-            )
-          })
-          }
-        </Row>
-      </Container>
+          </Row>
+          <Row className='pb-5'>
+            {
+              miscImg.map((img, index) => {
+                return (
+                  <Col key={index} >
+                    <PriceCard class='lightDark my-3' img={img.imgUrl} />
+                  </Col>
+                )
+              })
+            }
+          </Row>
+        </Container>
+      </div>
     </div>
   )
 }
