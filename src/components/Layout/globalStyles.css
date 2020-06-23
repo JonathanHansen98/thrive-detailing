@@ -101,8 +101,8 @@ img {
   transition-timing-function: ease-out;
 }
 .hvr-icon-grow-rotate:hover .hvr-icon, .hvr-icon-grow-rotate:focus .hvr-icon, .hvr-icon-grow-rotate:active .hvr-icon {
-  -webkit-transform: scale(1.5) rotate(12deg);
-  transform: scale(1.5) rotate(12deg);
+  -webkit-transform: scale(1.2) rotate(12deg);
+  transform: scale(1.2) rotate(12deg);
 }
 
 /* Reveal */

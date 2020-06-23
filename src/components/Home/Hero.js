@@ -20,8 +20,8 @@ const Hero = () => {
     };
 
     return (
-        <>
-            <Carousel interval={5000} activeIndex={index} controls={false} indicators={false} onSelect={handleSelect}>
+        <div >
+            <Carousel className='d-none d-sm-block' interval={5000} activeIndex={index} controls={false} indicators={false} onSelect={handleSelect}>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
@@ -47,7 +47,7 @@ const Hero = () => {
                     />
                 </Carousel.Item>
             </Carousel>
-        </>
+        </div>
     );
 
 };
