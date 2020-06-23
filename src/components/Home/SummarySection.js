@@ -13,7 +13,7 @@ const SummarySection = () =>  {
       <Row>
         <Col lg={6}>
          <h1 className='tealAccent hvr-forward' style={styles.h1} >Mobile Detailing Services</h1>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         <p>We use the best products on the market to detail your vehicle. From cleaning chemicals, upholstery shampoos, to wax. We don't skimp on quality. We want you to feel confident in the products we use on your vehicle.</p>
         </Col>
         
         <Col lg={6}>

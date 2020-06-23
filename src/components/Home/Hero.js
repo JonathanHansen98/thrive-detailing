@@ -10,17 +10,8 @@ import {
     Carousel
 } from 'react-bootstrap/'
 
-const useStyles = () => ({
-    carousel: {
-        height: 150
-    },
-
-
-})
 
 const Hero = () => {
-
-    const classes = useStyles();
 
     const [index, setIndex] = useState(0);
 
@@ -30,13 +21,13 @@ const Hero = () => {
 
     return (
         <>
-            <Carousel interval={5000} activeIndex={index} controls={false} indicators={false} onSelect={handleSelect} className={classes.carousel}>
+            <Carousel interval={5000} activeIndex={index} controls={false} indicators={false} onSelect={handleSelect}>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
                         src={bmwImg}
                         alt="First slide"
-                        height="700px"
+                        height="450px"
                     />
                 </Carousel.Item>
                 <Carousel.Item>
@@ -44,7 +35,7 @@ const Hero = () => {
                         className="d-block w-100"
                         src={foamImg}
                         alt="Second slide"
-                        height="700px"
+                        height="450px"
                     />
                 </Carousel.Item>
                 <Carousel.Item>
@@ -52,7 +43,7 @@ const Hero = () => {
                         className="d-block w-100"
                         src={pricebanner}
                         alt="Third slide"
-                        height="700px"
+                        height="450px"
                     />
                 </Carousel.Item>
             </Carousel>

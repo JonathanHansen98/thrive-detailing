@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import { Modal, Button, Row, Col, Container } from 'react-bootstrap'
-import Form from './Contact/ContactForm'
+import React from 'react'
+import { Modal, Button } from 'react-bootstrap'
+import Form from './ContactForm'
 
 const ContactFormModal = (props) => {
   return (

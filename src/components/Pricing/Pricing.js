@@ -57,7 +57,7 @@ const Pricing = () => {
   ]
   return (
     <div>
-      <Container>
+      <Container className='my-5'>
         <Row>
           <Col className='text-center mt-3 tealAccent'>
             <h1 className='underlined hvr-forward'>
@@ -76,9 +76,9 @@ const Pricing = () => {
             })
           }
         </Row>
-      </Container>
-      <div className="w-100 veryDark">
-        <Container>
+      </Container >
+      <div className="w-100 veryDark py-5">
+        <Container >
           <Row>
             <Col className='text-center mt-3 tealAccent' >
               <h1 className='underlined hvr-forward'>
@@ -99,7 +99,7 @@ const Pricing = () => {
           </Row>
         </Container>
       </div>
-      <Container >
+      <Container className='my-5'>
         <Row>
           <Col className='text-center  mt-3 tealAccent'>
             <h1 className='underlined hvr-forward'>
@@ -118,9 +118,9 @@ const Pricing = () => {
             })
           }
         </Row>
-      </Container>
+      </Container >
       <div className="w-100 veryDark">
-        <Container>
+        <Container className='pt-5'>
           <Row>
             <Col className='text-center  mt-3 tealAccent'>
               <h1 className='underlined hvr-forward'>Ceramic Coating/ Interior Sanitation</h1>

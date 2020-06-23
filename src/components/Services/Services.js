@@ -3,7 +3,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap'
 import wheelPic from '../../images/wheels.jpg'
 import rvPic from '../../images/rv-wash.jpg'
 import outsidePic from '../../images/outside-sponge.jpg'
-import Modal from '../ContactFormModal'
+import Modal from '../Contact/ContactFormModal'
 const Services = () => {
   const [modalShow, setModalShow] = React.useState(false);
   const styles = {
@@ -20,7 +20,7 @@ const Services = () => {
         <Row>
           <Col style={styles.lineSpaced}>
             <h1 className='tealAccent hvr-forward underlined'>Automotive Detailing</h1>
-            <p>We take time to address your personal goals and concerns and make sure you’re receiving the exact service you are looking for.  Melted crayons in the cup holder?  No problem.  Kids get sick in the back seat?  We’ve seen it all.  Spoil your vehicle with a fresh from the showroom look and feel. At Sleek Image, we strive to offer our clients the most professional service and the highest quality work. We only use the finest products to protect, preserve and enhance your vehicle. Our products are proven safe for your vehicle’s interior and exterior.
+            <p>We take time to address your personal goals and concerns and make sure you’re receiving the exact service you are looking for.  Melted crayons in the cup holder?  No problem.  Kids get sick in the back seat?  We’ve seen it all.  Spoil your vehicle with a fresh from the showroom look and feel. At Thrive Auto Detailing, we strive to offer our clients the most professional service and the highest quality work. We only use the finest products to protect, preserve and enhance your vehicle. Our products are proven safe for your vehicle’s interior and exterior.
               
             We guarantee you will be happy with any service you select to pamper your vehicle with.
 </p>
@@ -59,7 +59,7 @@ const Services = () => {
         <Row>
           <Col className='align-self-center' style={styles.lineSpaced}>
             <h1 className='tealAccent hvr-forward underlined'>Mobile Services</h1>
-            <p >Thrive Detailing is Maryland’s leading car cleaning and protection service.  Our mobile auto detailing units travel throughout the valley, offering premium detailing services, paint correction, ceramic coatings, and more.  We bring our own water and power so we can complete your service at your work, home, almost anywhere.</p>
+            <p >Thrive Detailing is Arizona’s leading car cleaning and protection service.  Our mobile auto detailing units travel throughout the valley, offering premium detailing services, paint correction, ceramic coatings, and more.  We bring our own water and power so we can complete your service at your work, home, almost anywhere.</p>
           </Col>
           <Col xl={6} className='text-center'>
             <img className='shadowImg' src={outsidePic} width='100%' />
