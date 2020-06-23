@@ -14,12 +14,12 @@ const services = [
     {
         cardHeader: "Automotive Detailing",
         imageURL: redCarPic,
-        cardBody: "Some quick example text to build on the card title and make up the bulk of the card's content."
+        cardBody: "We have mobile auto detailing service vehicles near you! We detail right on-site at your home or your office and bring everything we need to perform your detail."
     },
     {
         cardHeader: "RV/ Boat Detailing",
         imageURL: semiPic,
-        cardBody: "Some quick example text to build on the card title and make up the bulk of the card's content."
+        cardBody: "At Thrive Detailing, no job is too big. We provide RV/ Boat detailing services right where you parked it."
     },
     {
         cardHeader: "Mobile Services",
@@ -53,7 +53,7 @@ const Home = () => {
                     </Col>
                 </Row>
             </Container>
-            <Container fluid={true}>
+            <Container>
                 <Row>
                     {services.map((service, index) => {
                         return (
@@ -64,7 +64,7 @@ const Home = () => {
                     })}
                 </Row>
             </Container>
-            <Container className='py-5 veryDark' fluid={true}>
+            <Container className='py-5 mb-5 veryDark'>
             <SummarySection/>
             </Container>
         </>
