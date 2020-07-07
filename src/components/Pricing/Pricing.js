@@ -130,7 +130,7 @@ const Pricing = () => {
             {
               miscImg.map((img, index) => {
                 return (
-                  <Col key={index} >
+                  <Col xs={12} key={index} >
                     <PriceCard class='lightDark my-3' img={img.imgUrl} />
                   </Col>
                 )
