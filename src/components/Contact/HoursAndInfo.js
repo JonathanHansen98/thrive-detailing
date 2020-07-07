@@ -53,7 +53,7 @@ const HoursAndInfo = () => {
                 <Row>
                   <Col className='text-center'>
                     <p>Thrive Automotive Detailing: (480) 236-7673</p>
-                    <p>detail@thriveautodetailing.com</p>
+                    <p>thriveautodetail@gmail.com</p>
                   </Col>
                 </Row>
               </Col>

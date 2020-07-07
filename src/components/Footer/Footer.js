@@ -105,7 +105,7 @@ const Footer = () => {
         </Row>
         <Row className='text-center py-3'>
           <Col>
-            <p>Thrive Automotive Detailing: (480) 236-7673 | detail@thriveautodetailing.com</p>
+            <p>Thrive Automotive Detailing: (480) 236-7673 | thriveautodetailing@gmail.com</p>
           </Col>
         </Row>
       </Container>
