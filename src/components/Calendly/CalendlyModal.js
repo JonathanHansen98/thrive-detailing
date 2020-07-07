@@ -21,7 +21,7 @@ const ContactFormModal = (props) => {
           <Calendly />
         </Modal.Body>
         <Modal.Footer className='pt-0'>
-          <Button variant='teal' onClick={props.onHide}>Close</Button>
+          <Button className='my-3' variant='teal' onClick={props.onHide}>Close</Button>
         </Modal.Footer>
       </Modal>
     </>
