@@ -11,8 +11,7 @@ import paintSmall from '../../images/Pricing/paint-corr-small.png'
 import paintMid from '../../images/Pricing/paint-corr-mid.png'
 import paintLrg from '../../images/Pricing/paint-corr-truck.png'
 import sanitation from '../../images/Pricing/sanitation.png'
-import ceramic from '../../images/Pricing/ceramic.png'
-
+import ceramic from '../../images/Pricing/coating.png'
 const Pricing = () => {
   const basicImgs = [
     {
