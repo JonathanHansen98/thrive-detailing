@@ -16,10 +16,13 @@ a {
   color: rgb(196, 190, 190);
   text-decoration: none;
 }
-a:hover {
+a:hover, #contact-icon:hover {
   color: #14ffec;
   text-decoration: none;
+  cursor: pointer;
 }
+
+
 
 
 .tealAccent {

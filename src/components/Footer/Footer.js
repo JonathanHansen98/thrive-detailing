@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Row, Col, Container } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhoneVolume, faTags } from '@fortawesome/free-solid-svg-icons'
 import thriveLogo from '../../images/thrive-car-125x.png';
 import jhLogo from '../../images/devlogo.png'
+import Modal from '../Contact/ContactFormModal'
 
 const styles = {
   Row: {
@@ -18,6 +19,8 @@ const styles = {
   }
 }
 const Footer = () => {
+  const [modalShow, setModalShow] = useState(false);
+
   return (
     <>
       <Container fluid={true} style={styles.tealAccent}>
@@ -26,7 +29,10 @@ const Footer = () => {
             <div>
               <Row>
                 <Col xs={6} md='auto' className='hvr-icon-grow-rotate text-center mx-'>
-                  <FontAwesomeIcon style={styles.iconSize} size={'5x'} icon={faEnvelope} className='hvr-icon' />
+                 
+                  <FontAwesomeIcon id='contact-icon' onClick={() => setModalShow(true)} style={styles.iconSize} size={'5x'} icon={faEnvelope} className='hvr-icon' />
+                  <Modal show={modalShow} conactModalShow={modalShow} setContactModal={setModalShow} />
+                
                 </Col>
                 <Col xs={6} md='auto'>
                   <Row>
@@ -47,7 +53,10 @@ const Footer = () => {
             <div>
               <Row>
                 <Col xs={6} md='auto' className='hvr-icon-grow-rotate text-center mx-'>
+                  <a href='/contact'>
                   <FontAwesomeIcon style={styles.iconSize} size={'5x'} icon={faPhoneVolume} className='hvr-icon' />
+
+                  </a>
                 </Col>
                 <Col xs={6} md='auto'>
                   <Row>
@@ -68,7 +77,10 @@ const Footer = () => {
             <div>
               <Row>
                 <Col xs={6} md='auto' className='hvr-icon-grow-rotate text-center mx-'>
+                  <a href='/pricing'>
                   <FontAwesomeIcon style={styles.iconSize} size={'5x'} icon={faTags} className='hvr-icon' />
+
+                  </a>
                 </Col>
                 <Col xs={6} md='auto'>
                   <Row>

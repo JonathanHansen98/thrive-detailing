@@ -1,18 +1,19 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Modal, Button } from 'react-bootstrap'
 import Calendly from './Calendly'
 
-const ContactFormModal = (props) => {
-  const [modalShow, setModalShow] = React.useState(false);
+const CalendlyModal = ({modalShow, setModalShow}) => {
   return (
     <>
       <Modal
-        {...props}
+        show={modalShow}
         size="xl"
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
-        <Modal.Header closeButton>
+        <Modal.Header onClick={() => {
+            setModalShow(false)
+          }} closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
             <h4><i>Set up an appointment</i></h4>
           </Modal.Title>
@@ -21,7 +22,9 @@ const ContactFormModal = (props) => {
           <Calendly />
         </Modal.Body>
         <Modal.Footer className='pt-0'>
-          <Button className='my-3' variant='teal' onClick={props.onHide}>Close</Button>
+          <Button className='my-3' variant='teal' onClick={() => {
+            setModalShow(false)
+          }}>Close</Button>
         </Modal.Footer>
       </Modal>
     </>
@@ -29,4 +32,4 @@ const ContactFormModal = (props) => {
 }
 
 
-export default ContactFormModal
+export default CalendlyModal
