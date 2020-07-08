@@ -13,7 +13,7 @@ export const CollapseButton = ({ aria, isExpanded, setExpanded }) => {
     border-radius: .25rem;
     `
     return (
-            <Button onClick={() => {
+            <Button id="collapse-button" onClick={() => {
                 setExpanded(!isExpanded)
             }} aria-controls={aria} className='float-right d-lg-none'>
                 <FontAwesomeIcon icon={faBars} color='#14ffec' />
