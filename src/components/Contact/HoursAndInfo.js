@@ -26,14 +26,14 @@ const HoursAndInfo = () => {
                 </Row>
                 <Row>
                   <Col className='text-center'>
-                    <p>Mon - 8a - 5p</p>
-                    <p>Tue - 8a - 5p</p>
-                    <p>Wed - 8a - 5p</p>
+                    <p>Mon - 6a - 6p</p>
+                    <p>Tue - 6a - 6p</p>
+                    <p>Wed - 6a - 6p</p>
                   </Col>
                   <Col className='text-center'>
-                    <p>Thu - 8a - 5p</p>
-                    <p>Fri - 8a - 5p</p>
-                    <p>Sat - 8a - 5p</p>
+                    <p>Thu - 6a - 6p</p>
+                    <p>Fri - 6a - 6p</p>
+                    <p>Sat - 6a - 6p</p>
                   </Col>
                 </Row>
                 <Row>
