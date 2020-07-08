@@ -22,7 +22,7 @@ const services = [
         cardBody: "We offer multiple services to meet all of your vehicle care needs. We offer these services at an exceptional value to not only save you time, but money as well."
     },
     {
-        cardHeader: "Mobile Services",
+        cardHeader: "Mobile Detailing Services",
         imageURL: greyCarPic,
         cardBody: "We have mobile auto detailing service vehicles near you! We detail right on-site at your home or your office and bring everything we need to perform your detail."
     }
