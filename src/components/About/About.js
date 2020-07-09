@@ -1,11 +1,10 @@
 import React from 'react'
-import Hero from '../Home/Hero'
 import { Container, Row, Col } from 'react-bootstrap'
+import AboutImg from '../../images/about.jpg'
 
 const About = () => {
     return (
         <>
-            <Hero />
             <Container className='py-5'>
                 <Row>
                     <Col sm={6} className='align-self-center py-3 '>
@@ -23,7 +22,7 @@ const About = () => {
                         </Row>
                     </Col>
                     <Col sm={6} className='text-center d-flex justify-content-center order-first'>
-                        <img className='align-self-center' src='https://via.placeholder.com/450x650' />
+                        <img className='align-self-center' src={AboutImg} />
                     </Col>
                 </Row>
             </Container>
