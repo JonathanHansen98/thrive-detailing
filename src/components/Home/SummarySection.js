@@ -1,6 +1,6 @@
 import React from 'react'
 import {Col, Row, Container} from 'react-bootstrap'
-import Pic from '../../images/redCar.jpeg'
+import Img from '../Layout/image'
 
 const SummarySection = () =>  {
   const styles = {
@@ -17,7 +17,7 @@ const SummarySection = () =>  {
         </Col>
         
         <Col lg={6}>
-        <img className='shadowImg' src={Pic}></img>
+        <Img className='shadowImg' fileName="redCar.jpeg"/>
         </Col>
       </Row>
     </Container>

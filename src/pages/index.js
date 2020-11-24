@@ -5,12 +5,6 @@ import Layout from "../components/Layout/layout";
 import SEO from "../components/Layout/seo";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../components/Layout/globalStyles.css'
- 
-
-
-
-
-
 
 const IndexPage = () => (
   <Layout>

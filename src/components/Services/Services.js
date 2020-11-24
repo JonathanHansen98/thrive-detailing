@@ -1,9 +1,7 @@
 import React, {useState} from "react"
 import { Container, Row, Col, Button } from "react-bootstrap"
-import wheelPic from "../../images/wheels.jpg"
-import rvPic from "../../images/rv-wash.jpg"
-import outsidePic from "../../images/outside-sponge.jpg"
 import Modal from "../Contact/ContactFormModal"
+import Img from '../Layout/image'
 const Services = () => {
   const [conactModalShow, setContactModal] = useState(false)
   const styles = {
@@ -36,7 +34,7 @@ const Services = () => {
             </p>
           </Col>
           <Col xl={6} className="text-center">
-            <img className="shadowImg" src={wheelPic} width="100%" />
+            <Img className="shadowImg w-100" fileName="wheels.jpg" />
           </Col>
         </Row>
         <Row>
@@ -60,7 +58,7 @@ const Services = () => {
         <Container className="px-5 py-5 mx-0">
           <Row>
             <Col xl={6} className="text-center d-flex align-items-center">
-              <img className="shadowImg" src={rvPic} width="100%" />
+              <Img className="shadowImg w-100" fileName="rv-wash.jpg" />
             </Col>
             <Col style={styles.lineSpaced}>
               <h1 className="tealAccent hvr-forward underlined mt-5">
@@ -107,7 +105,7 @@ const Services = () => {
             </p>
           </Col>
           <Col xl={6} className="text-center">
-            <img className="shadowImg" src={outsidePic} width="100%" />
+            <Img className="shadowImg w-100" fileName="outside-sponge.jpg"/>
           </Col>
         </Row>
         <Row>
