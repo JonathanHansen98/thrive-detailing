@@ -1,33 +1,26 @@
 import React from "react"
-
 import { Container, Row, Col, } from "react-bootstrap/"
-
 import Hero from "./Hero"
-
 import ServiceCard from './ServiceCard'
 import SummarySection from "./SummarySection"
-import redCarPic from '../../images/outside-sponge.jpg'
-import semiPic from '../../images/semiTruck.jpeg'
-import greyCarPic from '../../images/soapyGrey.jpeg'
 
 const services = [
     {
         cardHeader: "Automotive Detailing",
-        imageURL: redCarPic,
+        imageURL: "outside-sponge.jpg",
         cardBody: "We are dedicated to providing quality service and customer satisfaction at a great value in a mobile service where we come to you at your convenience."
     },
     {
         cardHeader: "RV/ Boat Detailing",
-        imageURL: semiPic,
+        imageURL: "semiTruck.jpeg",
         cardBody: "We offer multiple services to meet all of your vehicle care needs. We offer these services at an exceptional value to not only save you time, but money as well."
     },
     {
         cardHeader: "Mobile Detailing Services",
-        imageURL: greyCarPic,
+        imageURL: "soapyGrey.jpeg",
         cardBody: "We have mobile auto detailing service vehicles near you! We detail right on-site at your home or your office and bring everything we need to perform your detail."
     }
-]
-
+];
 
 const Home = () => {
     const styles = {
