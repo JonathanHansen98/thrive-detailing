@@ -39,7 +39,7 @@ const OtherServices = () => {
   ]
   return (
     <>
-      <Row className="mb-3">
+      <Row className="mb-3 pt-5">
         <Col xs={12}>
           <h3
             className="underlined pr-3"

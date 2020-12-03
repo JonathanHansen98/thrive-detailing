@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, { useState } from "react"
 import { Button, Col, Row } from "react-bootstrap"
 import CalendlyModal from "../../../Calendly/CalendlyModal"
 const services = [
@@ -16,7 +16,7 @@ const UltimateWash = () => {
   const [open, setOpen] = useState(false)
   return (
     <>
-      <Row>
+      <Row className="pt-5">
         <Col>
           <h3
             style={{ display: "inline", fontWeight: "bold", marginBottom: 4 }}
@@ -57,7 +57,7 @@ const UltimateWash = () => {
           <h3 className="my-2">$135-$195</h3>
         </Col>
       </Row>
-      <Row>
+      <Row className='pb-5'>
         <Col xs={12}>
           <Button
             onClick={() => {

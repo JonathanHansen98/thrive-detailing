@@ -48,7 +48,7 @@ const Pricing = () => {
         </form>
       </div>
       <Container>
-        <Row className="py-5">
+        <Row className="pt-5">
           <Col style={{ justifyContent: "center", display: "flex" }} xs={12}>
             <ButtonGroup>
               {tabs.map(button => (
