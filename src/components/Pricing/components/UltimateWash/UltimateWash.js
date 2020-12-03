@@ -1,5 +1,6 @@
-import React from "react"
+import React, {useState} from "react"
 import { Button, Col, Row } from "react-bootstrap"
+import CalendlyModal from "../../../Calendly/CalendlyModal"
 const services = [
   "Exterior hand wash.",
   "Clay bar.",
@@ -12,13 +13,17 @@ const services = [
   "Buff and wax.",
 ]
 const UltimateWash = () => {
+  const [open, setOpen] = useState(false)
   return (
     <>
       <Row>
         <Col>
-          <h5 style={{ display: "inline" }} className="underlined pr-3">
+          <h3
+            style={{ display: "inline", fontWeight: "bold", marginBottom: 4 }}
+            className="underlined pr-3"
+          >
             The Ultimate Detail Package Includes:
-          </h5>
+          </h3>
         </Col>
       </Row>
       <Row className="py-2">
@@ -43,17 +48,28 @@ const UltimateWash = () => {
       </Row>
       <Row>
         <Col>
-          <h5 style={{ display: "inline" }} className="underlined pr-3">
+          <h3
+            style={{ display: "inline", fontWeight: "bold", marginBottom: 4 }}
+            className="underlined pr-3"
+          >
             For Only:
-          </h5>
+          </h3>
           <h3 className="my-2">$135-$195</h3>
         </Col>
       </Row>
       <Row>
         <Col xs={12}>
-          <Button variant="teal">Schedule Now</Button>
+          <Button
+            onClick={() => {
+              setOpen(true)
+            }}
+            variant="teal"
+          >
+            Schedule Now
+          </Button>
         </Col>
       </Row>
+      <CalendlyModal modalShow={open} show={open} setModalShow={setOpen} />
     </>
   )
 }
