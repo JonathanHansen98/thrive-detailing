@@ -5,7 +5,7 @@ import FormModal from "./components/FormModal/FormModal"
 import PackageCard from "./components/PackageCard/PackageCard"
 
 const VIP = () => {
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
   const [selectedPackage, setSelectedPackage] = useState(null)
 
   const handleOpen = () => setOpen(true)

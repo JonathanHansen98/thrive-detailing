@@ -31,6 +31,7 @@ const Pricing = () => {
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
+          <input name="package" placeholder="John Smith" />
           <input type="hidden" name="form-name" value="vip-package" />
           <input name="name" type="name" placeholder="John Smith" />
           <input name="phone" type="phone" placeholder="123-456-7890" />
