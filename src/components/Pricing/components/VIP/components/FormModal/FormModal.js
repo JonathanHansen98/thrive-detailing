@@ -28,10 +28,6 @@ const FormModal = ({ open, handleClose, packageName }) => {
           <Form.Control name="name" type="name" placeholder="John Smith" />
           <Form.Label>Phone Number</Form.Label>
           <Form.Control name="phone" type="phone" placeholder="123-456-7890" />
-
-
-
-          
           <Form.Label>Email</Form.Label>
           <Form.Control
             name="email"
@@ -49,7 +45,6 @@ const FormModal = ({ open, handleClose, packageName }) => {
             style={{ float: "right", marginTop: 12 }}
             variant="teal"
             type="submit"
-            onClick={handleClose}
           >
             Send
           </Button>

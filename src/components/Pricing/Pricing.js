@@ -4,6 +4,7 @@ import { Container, Row, Col, ButtonGroup, Button } from "react-bootstrap"
 import UltimateWash from "./components/UltimateWash/UltimateWash"
 import VIP from "./components/VIP/VIP"
 import Other from "./components/Other/OtherServices"
+import FormModal from "./components/VIP/components/FormModal/FormModal"
 
 const tabs = [
   {
@@ -47,6 +48,7 @@ const Pricing = () => {
         </Row>
         {tab.component}
       </Container>
+      <FormModal />
     </>
   )
 }
