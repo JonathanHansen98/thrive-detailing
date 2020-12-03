@@ -4,7 +4,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React from "react"
 import { Button, Card } from "react-bootstrap"
 
-const PackageCard = ({ icon, name, interval, price, billingCycle }) => {
+const PackageCard = ({
+  icon,
+  name,
+  interval,
+  price,
+  billingCycle,
+  handleOpen,
+  setSelectedPackage,
+}) => {
   return (
     <Card
       className="text-center"
@@ -48,7 +56,15 @@ const PackageCard = ({ icon, name, interval, price, billingCycle }) => {
         </p>
       </div>
       <div style={{ padding: "8px 8px 0 8px" }}>
-        <Button variant="teal">Sign Up Now</Button>
+        <Button
+          onClick={() => {
+            handleOpen()
+            setSelectedPackage(name)
+          }}
+          variant="teal"
+        >
+          Sign Up Now
+        </Button>
       </div>
     </Card>
   )
