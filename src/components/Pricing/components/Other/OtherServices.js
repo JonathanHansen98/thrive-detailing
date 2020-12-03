@@ -74,7 +74,7 @@ const OtherServices = () => {
       </Row>
       {boatRvServices.map((service, ind) => (
         <Row
-        
+          className={ind == boatRvServices.length - 1 && "mb-5 mb-sm-0"}
           style={{
             backgroundColor: ind % 2 == 0 ? "#232323" : "#323232",
             padding: "4px 8px",
@@ -86,7 +86,7 @@ const OtherServices = () => {
               "$500 -$800"
             ) : (
               <FontAwesomeIcon
-                style={{ alignSelf: "center", color: '#14ffec' }}
+                style={{ alignSelf: "center", color: "#14ffec" }}
                 icon={faCheckCircle}
               />
             )}

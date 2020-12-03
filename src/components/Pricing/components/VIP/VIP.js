@@ -30,7 +30,7 @@ const VIP = () => {
     <>
       <Row style={{ justifyContent: "center" }}>
         {packages.map(({ name, interval, price, icon, billingCycle }) => (
-          <Col xs={4} style={{ justifyContent: "center", display: "flex" }}>
+          <Col xs={12} md={4} className='py-2 py-md-0' style={{ justifyContent: "center", display: "flex" }}>
             <PackageCard
               name={name}
               price={price}
