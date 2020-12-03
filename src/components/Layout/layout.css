@@ -3,17 +3,28 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
+html,
+body,
+#___gatsby {
+  height: 100%;
+}
+
+#gatsby-focus-wrapper {
+  height: 100%;
+}
+
 @font-face {
-  font-family: 'Montserrat';
-  src: url('./font/Montserrat-Regular.otf');
+  font-family: "Montserrat";
+  src: url("./font/Montserrat-Regular.otf");
 }
-body {
-  font-family: 'Montserrat';
-}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Montserrat";
+  margin: 0px;
 }
 article,
 aside,
@@ -206,7 +217,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  background-color:#323232;
+  background-color: #323232;
   color: hsla(0, 0%, 0%, 0.8);
   font-family: georgia, serif;
   font-weight: normal;
