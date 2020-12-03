@@ -23,7 +23,6 @@ const FormModal = ({ open, handleClose, packageName }) => {
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
-          <input type="hidden" name="bot-field" />
           <input type="hidden" name="form-name" value="vip-package" />
           <input type="hidden" name="requested-package" value={packageName} />
           <Form.Label>Name</Form.Label>
