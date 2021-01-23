@@ -91,10 +91,14 @@ const Pricing = () => {
           ></textarea>
         </form>
       </div>
-      <Container className='pt-5'>
+      <Container className="pt-5">
         <Tabs defaultActiveKey={tabs[0].name}>
           {tabs.map(tab => (
-            <Tab eventKey={tab.name} title={tab.name} key={tab.name}>
+            <Tab
+              eventKey={tab.name}
+              title={tab.name}
+              key={tab.name}
+            >
               {tab.component}
             </Tab>
           ))}
