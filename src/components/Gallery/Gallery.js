@@ -44,12 +44,14 @@ const Gallery = () => {
                         <a
                           href="https://www.instagram.com/thriveautodetail/"
                           target="_blank"
+                          rel="noopener noreferrer"
                         >
                           {" "}
                           <img
                             src={pic.node.display_url}
                             className="shadowImg tealShadowHover"
                             style={{ maxHeight: 315 }}
+                            alt={`Instagram post #${index+ 1}`}
                           />
                         </a>
                       </Col>
