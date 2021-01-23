@@ -52,9 +52,11 @@ const tabs = [
   },
 ]
 
-const notSSR = typeof window != "undefined"
+let isMobile;
 
-const isMobile = window.innerWidth <= 500
+if (typeof window != "undefined") {
+  isMobile = window.innerWidth <= 500
+}
 
 const Pricing = () => {
   const [tab, setTab] = useState(tabs[0])
@@ -86,7 +88,7 @@ const Pricing = () => {
       <Container>
         <Row className="pt-5">
           <Col style={{ justifyContent: "center", display: "flex" }} xs={12}>
-            <ButtonGroup vertical={notSSR && isMobile}>
+            <ButtonGroup vertical={isMobile}>
               {tabs.map(button => (
                 <Button
                   key={button.name}
