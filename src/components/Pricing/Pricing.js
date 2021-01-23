@@ -1,15 +1,46 @@
 import React, { useState } from "react"
-import PriceCard from "./PriceCard"
 import { Container, Row, Col, ButtonGroup, Button } from "react-bootstrap"
-import UltimateWash from "./components/UltimateWash/UltimateWash"
 import VIP from "./components/VIP/VIP"
 import Other from "./components/Other/OtherServices"
 import FormModal from "./components/VIP/components/FormModal/FormModal"
+import PriceTab from "./components/PriceTab/PriceTab"
+import {
+  basicWashServices,
+  interiorDetailServices,
+  ultimatePackageServices,
+} from "./lib/services"
 
 const tabs = [
   {
+    name: "Basic Wash - Level 1",
+    component: (
+      <PriceTab
+        services={basicWashServices}
+        title="The Basic Wash - Level 1"
+        price="$65 - $85"
+      />
+    ),
+  },
+  {
     name: "Ultimate Detail",
-    component: <UltimateWash />,
+    component: (
+      <PriceTab
+        services={ultimatePackageServices}
+        title="The Ultimate Detail Package"
+        price="$135 - $195"
+      />
+    ),
+  },
+  {
+    name: "Interior Detail",
+    component: (
+      <PriceTab
+        services={interiorDetailServices}
+        title="Interior Detail"
+        price="$100"
+        startsAt
+      />
+    ),
   },
   {
     name: "VIP Maintenance Washes",
@@ -20,6 +51,11 @@ const tabs = [
     component: <Other />,
   },
 ]
+
+const notSSR = typeof window != "undefined"
+
+const isMobile = window.innerWidth <= 500
+
 const Pricing = () => {
   const [tab, setTab] = useState(tabs[0])
   return (
@@ -50,9 +86,10 @@ const Pricing = () => {
       <Container>
         <Row className="pt-5">
           <Col style={{ justifyContent: "center", display: "flex" }} xs={12}>
-            <ButtonGroup>
+            <ButtonGroup vertical={notSSR && isMobile}>
               {tabs.map(button => (
                 <Button
+                  key={button.name}
                   style={{
                     backgroundColor:
                       tab.name == button.name ? "#14ffec" : "transparent",

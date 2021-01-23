@@ -31,6 +31,7 @@ const VIP = () => {
       <Row className="py-5" style={{ justifyContent: "center" }}>
         {packages.map(({ name, interval, price, icon, billingCycle }) => (
           <Col
+            key={name}
             xs={12}
             md={4}
             className="py-2 py-md-0"

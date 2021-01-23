@@ -4,7 +4,6 @@ import styled from "styled-components"
 
 const title = styled.h6``
 const FormModal = ({ open, handleClose, packageName }) => {
-  console.log(packageName)
   return (
     <Modal backdrop={true} show={open} onHide={handleClose}>
       <Modal.Header closeButton>

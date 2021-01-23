@@ -1,18 +1,8 @@
 import React, { useState } from "react"
 import { Button, Col, Row } from "react-bootstrap"
 import CalendlyModal from "../../../Calendly/CalendlyModal"
-const services = [
-  "Exterior hand wash.",
-  "Clay bar.",
-  "Wheels and heel wells cleaned and dressed.",
-  "Door jams cleaned.",
-  "Windows cleaned inside and out.",
-  "Shampoo(extract)/ steam carpets, seats and trunk.",
-  "Chrome polishing.",
-  "Leather recondition treatment.",
-  "Buff and wax.",
-]
-const UltimateWash = () => {
+
+const PriceTab = ({ title, services, price, startsAt }) => {
   const [open, setOpen] = useState(false)
   return (
     <>
@@ -22,7 +12,7 @@ const UltimateWash = () => {
             style={{ display: "inline", fontWeight: "bold", marginBottom: 4 }}
             className="underlined pr-3"
           >
-            The Ultimate Detail Package Includes:
+            {title} Includes:
           </h3>
         </Col>
       </Row>
@@ -31,7 +21,11 @@ const UltimateWash = () => {
           <ul>
             {services.map((text, ind) => {
               if (ind <= services.length / 2) {
-                return <li>{text}</li>
+                return (
+                  <li key={text} >
+                    {text}
+                  </li>
+                )
               }
             })}
           </ul>
@@ -40,7 +34,7 @@ const UltimateWash = () => {
           <ul>
             {services.map((text, ind) => {
               if (ind > services.length / 2) {
-                return <li>{text}</li>
+                return <li key={text}>{text}</li>
               }
             })}
           </ul>
@@ -52,12 +46,12 @@ const UltimateWash = () => {
             style={{ display: "inline", fontWeight: "bold", marginBottom: 4 }}
             className="underlined pr-3"
           >
-            For Only:
+            {startsAt ? "Starts At:" : "For Only:"}
           </h3>
-          <h3 className="my-2">$135-$195</h3>
+          <h3 className="my-2">{price}</h3>
         </Col>
       </Row>
-      <Row className='pb-5'>
+      <Row className="pb-5">
         <Col xs={12}>
           <Button
             onClick={() => {
@@ -74,4 +68,4 @@ const UltimateWash = () => {
   )
 }
 
-export default UltimateWash
+export default PriceTab

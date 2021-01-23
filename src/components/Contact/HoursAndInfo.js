@@ -13,7 +13,7 @@ const HoursAndInfo = () => {
             <Row>
               <Col>
                 <div className='text-center'>
-                  <img src={thriveLogo}></img>
+                  <img alt='Thrive Detailing Logo' src={thriveLogo}></img>
                 </div>
               </Col>
             </Row>
