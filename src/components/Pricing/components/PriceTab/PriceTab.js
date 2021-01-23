@@ -21,11 +21,7 @@ const PriceTab = ({ title, services, price, startsAt }) => {
           <ul>
             {services.map((text, ind) => {
               if (ind <= services.length / 2) {
-                return (
-                  <li key={text} >
-                    {text}
-                  </li>
-                )
+                return <li key={text}>{text}</li>
               }
             })}
           </ul>
