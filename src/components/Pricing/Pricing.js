@@ -1,5 +1,5 @@
-import React, { useState } from "react"
-import { Container, Row, Col, ButtonGroup, Button } from "react-bootstrap"
+import React from "react"
+import { Container, Row, Col, Tabs, Tab } from "react-bootstrap"
 import VIP from "./components/VIP/VIP"
 import Other from "./components/Other/OtherServices"
 import FormModal from "./components/VIP/components/FormModal/FormModal"
@@ -10,15 +10,13 @@ import {
   ultimatePackageServices,
 } from "./lib/services"
 
-import {isMobile} from 'react-device-detect'
-
 const tabs = [
   {
-    name: "Basic Wash - Level 1",
+    name: "Basic Wash",
     component: (
       <PriceTab
         services={basicWashServices}
-        title="The Basic Wash - Level 1"
+        title="The Basic Wash"
         price="$65 - $85"
       />
     ),
@@ -68,7 +66,6 @@ const checkMobile = () => {
 console.log(checkMobile())
 
 const Pricing = () => {
-  const [tab, setTab] = useState(tabs[0])
   return (
     <>
       <div style={{ display: "none" }}>
@@ -94,30 +91,14 @@ const Pricing = () => {
           ></textarea>
         </form>
       </div>
-      <Container>
-        <Row className="pt-5">
-          <Col style={{ justifyContent: "center", display: "flex" }} xs={12}>
-            <ButtonGroup vertical={true}>
-              {tabs.map(button => (
-                <Button
-                  key={button.name}
-                  style={{
-                    backgroundColor:
-                      tab.name == button.name ? "#14ffec" : "transparent",
-                    color: tab.name == button.name ? "black" : "#fff",
-                    border: "2px solid #14ffec",
-                  }}
-                  onClick={() => {
-                    setTab(button)
-                  }}
-                >
-                  {button.name}
-                </Button>
-              ))}
-            </ButtonGroup>
-          </Col>
-        </Row>
-        {tab.component}
+      <Container className='pt-5'>
+        <Tabs defaultActiveKey={tabs[0].name}>
+          {tabs.map(tab => (
+            <Tab eventKey={tab.name} title={tab.name} key={tab.name}>
+              {tab.component}
+            </Tab>
+          ))}
+        </Tabs>
       </Container>
       <FormModal />
     </>
