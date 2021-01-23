@@ -10,6 +10,8 @@ import {
   ultimatePackageServices,
 } from "./lib/services"
 
+import {isMobile} from 'react-device-detect'
+
 const tabs = [
   {
     name: "Basic Wash - Level 1",
@@ -52,11 +54,18 @@ const tabs = [
   },
 ]
 
-let isMobile;
-
-if (typeof window != "undefined") {
-  isMobile = window.innerWidth <= 500
+const checkMobile = () => {
+  if (typeof window !== "undefined") {
+    console.log("window obj accessable")
+    if (window.innerWidth <= 500) {
+      console.log("is mobile")
+      return true
+    }
+  }
+  return false
 }
+
+console.log(checkMobile())
 
 const Pricing = () => {
   const [tab, setTab] = useState(tabs[0])
@@ -88,7 +97,7 @@ const Pricing = () => {
       <Container>
         <Row className="pt-5">
           <Col style={{ justifyContent: "center", display: "flex" }} xs={12}>
-            <ButtonGroup vertical={isMobile}>
+            <ButtonGroup vertical={true}>
               {tabs.map(button => (
                 <Button
                   key={button.name}
