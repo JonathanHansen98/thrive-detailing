@@ -43,7 +43,7 @@ const tabs = [
     ),
   },
   {
-    name: "VIP Maintenance Washes",
+    name: "VIP Washes",
     component: <VIP />,
   },
   {
