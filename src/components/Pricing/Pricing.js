@@ -17,7 +17,7 @@ const tabs = [
       <PriceTab
         services={basicWashServices}
         title="The Basic Wash"
-        price="$65 - $85"
+        price="$85 - $100"
       />
     ),
   },
@@ -27,7 +27,7 @@ const tabs = [
       <PriceTab
         services={ultimatePackageServices}
         title="The Ultimate Detail Package"
-        price="$135 - $195"
+        price="$145 - $245"
       />
     ),
   },
@@ -37,14 +37,10 @@ const tabs = [
       <PriceTab
         services={interiorDetailServices}
         title="Interior Detail"
-        price="$100"
+        price="$125"
         startsAt
       />
     ),
-  },
-  {
-    name: "VIP Maintenance Washes",
-    component: <VIP />,
   },
   {
     name: "Other Services",

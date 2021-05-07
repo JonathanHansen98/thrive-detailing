@@ -11,7 +11,7 @@ const OtherServices = () => {
     },
     {
       name: "Ceramic Coating.",
-      price: "$250 - $500",
+      price: "$500 - $800",
     },
     {
       name: "Engine Shampoo.",
@@ -19,7 +19,7 @@ const OtherServices = () => {
     },
     {
       name: "Paint Restoration.",
-      price: "$250 $350",
+      price: "$300 - $600",
     },
     {
       name: "Pet Hair Removal.",
@@ -85,7 +85,7 @@ const OtherServices = () => {
           <Col xs={10}>{service}</Col>
           <Col xs={2} style={{ display: "flex" }}>
             {service == "Ceramic Coating." ? (
-              "$500 -$800"
+              "$800 -$1500"
             ) : (
               <FontAwesomeIcon
                 style={{ alignSelf: "center", color: "#14ffec" }}
