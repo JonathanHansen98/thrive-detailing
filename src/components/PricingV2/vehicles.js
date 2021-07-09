@@ -2,7 +2,7 @@ import React from 'react';
 import CarIcon from '../../svg/Car.svg';
 import BoatIcon from '../../svg/Boat.svg';
 import RVIcon from '../../svg/RV.svg';
-import SuvIcon from '../../svg/Suv.svg';
+import SuvIcon from '../../svg/SUV.svg';
 import TruckIcon from '../../svg/Truck.svg';
 import VanIcon from '../../svg/Van.svg';
 
