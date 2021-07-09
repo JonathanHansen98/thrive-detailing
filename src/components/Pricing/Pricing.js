@@ -12,7 +12,7 @@ import {
 
 const tabs = [
   {
-    name: "Basic Wash",
+    name: "Basic Detail",
     component: (
       <PriceTab
         services={basicWashServices}
@@ -46,20 +46,7 @@ const tabs = [
     name: "Other Services",
     component: <Other />,
   },
-]
-
-const checkMobile = () => {
-  if (typeof window !== "undefined") {
-    console.log("window obj accessable")
-    if (window.innerWidth <= 500) {
-      console.log("is mobile")
-      return true
-    }
-  }
-  return false
-}
-
-console.log(checkMobile())
+];
 
 const Pricing = () => {
   return (

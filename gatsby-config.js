@@ -27,5 +27,13 @@ module.exports = {
         icon: `src/images/thrive-favicon-car.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /svg/ // See below to configure properly
+        }
+      }
+    }
   ],
 }
